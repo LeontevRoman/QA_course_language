@@ -14,7 +14,7 @@ def browser(request):
     user_language = request.config.getoption("language")
 
     print("\n[+] Start chrome browser for test.. Please wait..")
-    time.sleep(2)
+    time.sleep(3)
 
     options = Options()
     options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
